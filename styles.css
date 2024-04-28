@@ -3,10 +3,12 @@
     --main-navy: #084574;
     --main-beige: #D2A757;
 }
-
+html{
+    font-size: 16px;
+}
 @font-face {
     font-family: 'Recoleta';
-    src: url('./assets/Recoleta-RegularDEMO.otf');
+    src: url('./assets/Recoleta-RegularDremO.otf');
 }
 
 body {
@@ -21,16 +23,16 @@ body {
 }
 
 *::selection {
-    background-color: var(--main-beige);
-    color: black;
+    background-color: var(--main-navy);
+    color: white;
 }
 
 /* Nav Section */
 #nav {
     background: none;
     position: absolute;
-    margin-left: 4em;
-    margin-right: 5em;
+    margin-left: 4rem;
+    margin-right: 5rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -44,15 +46,15 @@ body {
 
 #nav-links {
     margin: auto;
-    gap: 3em;
+    gap: 3rem;
     background-color: #FCCC4E;
-    padding: 0 2em;
-    border-radius: 1em;
+    padding: 0 2rem;
+    border-radius: 1rem;
     border: 3px solid var(--main-navy);
     cursor: pointer;
 }
 #nav-links a {
-    font-size: 1.5em;
+    font-size: 1.5rem;
     color: #4E381E;
     font-weight: 600;
     cursor: pointer;
@@ -79,7 +81,7 @@ body {
     #nav-btn {
         position: relative;
         right: 0;
-        margin-right: 1em;
+        margin-right: 1rem;
         background-color: #FCCC4E;
         border: 2px solid var(--main-navy);
     }
@@ -91,14 +93,14 @@ body {
 
     #logo {
         color: #FADC87;
-        width: 1em;
-        margin-left: 1em;
+        width: 1rem;
+        margin-left: 1rem;
 
     }
     #nav-links {
         gap: 0;
-        margin-left: -1em;
-        margin-top: 1em;
+        margin-left: -1rem;
+        margin-top: 1rem;
         border: none;
     }
 }
@@ -117,20 +119,19 @@ h1 {
     color: black;
     margin-left: 20px;
     margin-top: 50px;
-    margin-bottom: 0.3em;
-    font-size: 6em;
+    margin-bottom: 0.3rem;
+    font-size: 6rem;
     text-align: center;
     text-shadow: 10px 10px 10px black;
 
 }
-
 h1:hover {
     text-shadow: 10px 10px 10px black;
     animation: scaler 1s ease-in-out forwards;
 }
 
 #hero p{
-    font-size: 2em;
+    font-size: 2rem;
     text-align: center;
     font-weight: 600;
 }
@@ -139,11 +140,11 @@ h1:hover {
         background-position: 85% top;
     }
     #hero h1{
-        font-size: 4.4em;
+        font-size: 4.4rem;
         text-wrap: wrap;
     }
     #hero p{
-        font-size: 1.3em;
+        font-size: 1.3rem;
     }
 }
 @keyframes scaler {
@@ -168,8 +169,8 @@ h1:hover {
     min-height: 100vh;
     height: fit-content;
     width: 80vw;
-    /* margin: 1.5em auto; */
-    margin-bottom: 1.5em;
+    /* margin: 1.5rem auto; */
+    margin-bottom: 1.5rem;
     position: relative;
     overflow: hidden;
 }
@@ -180,9 +181,9 @@ h1:hover {
     display: flex;
     flex-direction: column;
     /* width: 80vw; */
-    margin: 2.5em 1em;
+    margin: 2.5rem 1rem;
     border-bottom: 3px solid var(--main-navy);
-    padding-bottom: 0.5em;
+    padding-bottom: 0.5rem;
 }
 
 #about-top h5 {
@@ -190,14 +191,14 @@ h1:hover {
     /* font-size: 50px; */
     text-align: center;
     /* color: var(--main-navy); */
-    font-size: 2.5em;
-    margin-bottom: 0.4em;
+    font-size: 3rem;
+    margin-bottom: 0.4rem;
     font-weight: bold;
     text-shadow: 5px 5px 5px var(--main-beige);
 }
 
 #about-top p {
-    font-size: 1.3em;
+    font-size: 1.8rem;
     font-weight: 600;
     font-family: 'Recoleta';
     text-align: center;
@@ -205,7 +206,7 @@ h1:hover {
 
 #about-bottom {
     display: flex;
-    gap: 2em;
+    gap: 2rem;
     align-items: center;
 }
 
@@ -215,11 +216,11 @@ h1:hover {
 #text-section p {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     text-align: justify;
-    font-size: 0.9em;
+    font-size: 1.5rem;
 }
 
 #text-section p:nth-of-type(1) {
-    font-size: 1em;
+    font-size: 1.8rem;
     font-weight: 600;
 }
 @keyframes appear {
@@ -243,16 +244,16 @@ h1:hover {
     #about-top {
         border: none;
         width: 80vw;
-        font-size: 0.7em;
+        font-size: 0.7rem;
         margin-bottom: 0;
     }
     #about-top h5{
-        font-size: 2.5em;
+        font-size: 2.5rem;
     }
     #about-bottom{
         flex-direction: column;
         text-align: left;
-        font-size: 0.7em;
+        font-size: 0.7rem;
     }
     #text-section{
         width: 80vw;
@@ -287,13 +288,13 @@ h1:hover {
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
-    margin-top: 3em;
+    margin-top: 3rem;
 
 }
 
 h2 {
     margin: -1% auto 5%;
-    font-size: 3em;
+    font-size: 3rem;
     font-weight: bold;
     text-shadow: 5px 5px 5px var(--main-beige);
 }
@@ -313,9 +314,9 @@ h2 {
     margin: auto;
     color: white;
     text-align: center;
-    height: 150px;
+    height: 10rem;
     margin-bottom: 10%;
-    font-size: 100px;
+    font-size: 2rem;
     outline: none;
     border: 1px solid var(--main-beige);
     box-shadow: 10px 10px 20px 5px var(--main-beige);
@@ -337,7 +338,7 @@ h2 {
 @media screen and (max-width: 992px) {
     #services h2{
         text-align: center;
-        font-size: 2.5em;
+        font-size: 2.5rem;
     }
 }
 /* Policy Section */
@@ -353,11 +354,11 @@ h2 {
 }
 
 #left-section {
-    margin-bottom: 2em;
+    margin-bottom: 2rem;
 }
 
 #left-section h3 {
-    font-size: 2.5em;
+    font-size: 2.5rem;
     font-weight: bold;
     text-shadow: 5px 5px 5px var(--main-beige);
 
@@ -376,11 +377,9 @@ h2 {
     margin: 20px 0;
     font-size: 20px;
 }
-
-#policy-name {
-    font-size: 35px;
+#left-section button:hover{
+    scale: 1.1;
 }
-
 #right-section {
     display: none;
     width: 60vw;
@@ -391,20 +390,20 @@ h2 {
     border: 1px solid var(--main-beige);
     box-shadow: 10px 10px 20px 5px var(--main-beige);
     margin: 20px 0;
-    font-size: 1.2em;
+    font-size: 1.2rem;
 }
 
 #policy-name {
     text-align: center;
-    margin: 1.1em;
-    font-size: 1.5em;
+    margin: 1.1rem;
+    font-size: 2.2rem;
     font-weight: bold;
     text-shadow: 5px 5px 5px var(--main-beige);
 }
 
 #policy-content li {
     list-style: none;
-    margin: 1.2em;
+    margin: 1.2rem;
     font-weight: 600;
     color: #4E381E;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
@@ -420,7 +419,7 @@ h2 {
         width: 100vw;
     }
     #left-section h3{
-        font-size: 2.5em;
+        font-size: 2.5rem;
     }
 }
 /* Contact Section */
@@ -432,17 +431,17 @@ h2 {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-bottom: 4em;
+    margin-bottom: 4rem;
 }
 #contact-top {
-    margin-bottom: 1.5em;
+    margin-bottom: 1.5rem;
     text-align: center;
 }
 
 #contact-top h3 {
-    font-size: 2.5em;
+    font-size: 2.5rem;
     margin: 0 auto;
-    padding: 0.5em;
+    padding: 0.5rem;
     width: fit-content;
     font-weight: bold;
     text-shadow: 5px 5px 5px var(--main-beige);
@@ -459,24 +458,24 @@ h2 {
     justify-content: space-between;
 }
 #contact-form p {
-    font-size: 25px;
+    font-size: 1.8rem;
     width: fit-content;
     font-weight: 600;
 }
 #contact-form form {
     display: flex;
     flex-direction: column;
-    gap: 1em;
+    gap: 1rem;
 }
 #contact-form form * {
     width: 30vw;
-    height: 3em;
+    height: 3rem;
     outline: none;
     border: 1px solid var(--main-beige);
     box-shadow: 10px 10px 20px 5px var(--main-beige);
-    border-radius: 1em;
+    border-radius: 1rem;
     background-color: #4E381E;
-    padding-left: 1em;
+    padding-left: 1rem;
     color: #FADC87;
 }
 
@@ -485,10 +484,10 @@ form *::placeholder {
 }
 
 #contact-form form textarea {
-    padding-top: 1em;
+    padding-top: 1rem;
     overflow: hidden;
     resize: none;
-    height: 10em;
+    height: 10rem;
 }
 
 #contact-right {
@@ -497,15 +496,15 @@ form *::placeholder {
     justify-content: space-between;
     align-items: center;
     text-align: center;
-    gap: 2em;
+    gap: 2rem;
 }
 
 #contact-info,
 #contact-social {
     background-color: #4E381E;
-    padding: 1em;
+    padding: 1rem;
     outline: none;
-    border-radius: 1em;
+    border-radius: 1rem;
     border: 1px solid var(--main-beige);
     box-shadow: 10px 10px 20px 5px var(--main-beige);
     color: #FADC87;
@@ -513,28 +512,28 @@ form *::placeholder {
 }
 
 #contact-right p {
-    font-size: 25px;
+    font-size: 1.6rem;
 }
 
 #contact-info div p span {
     color: white;
 }
 #contact-social a{
-    width: 2.5em;
-    margin: 0 0.5em;
+    width: 2.5rem;
+    margin: 0 0.5rem;
 }
 #contact-links {
     display: flex;
     justify-content: center;
 }
 #contact-links a svg{
-    width: 2.5em;
+    width: 2.3rem;
     filter: invert(1);
 }
 @media screen and (max-width: 992px) {
     #contact-bottom{
         flex-direction: column;
-        gap: 3em;
+        gap: 3rem;
     }
     #contact-form{
         width: 80vw;
@@ -563,10 +562,10 @@ form *::placeholder {
     background-color: #4E381E;
     color: #FADC87;
     text-align: center;
-    padding: 2em;
+    padding: 2rem;
 }
 #footer-logo-text{
-    margin-left: 1em;
+    margin-left: 1rem;
     display: flex;
     flex-direction: column;
 }
@@ -575,15 +574,15 @@ form *::placeholder {
 }
 #footer-left h3 {
     font-weight: 600;
-    font-size: 2em;
+    font-size: 2rem;
 }
 
 #footer-center {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    font-size: 1.5em;
-    gap: 1.2em;
+    font-size: 1.8rem;
+    gap: 1.2rem;
 }
 
 #footer-center a {
@@ -595,24 +594,24 @@ form *::placeholder {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    gap: 2em;
+    gap: 2rem;
 }
 
 #footer-right h3 a {
-    font-size: 0.8em;
+    font-size: 1.8rem;
     text-decoration: none;
     color: white;
 }
 
 #footer-right h3 span {
     display: block;
-    font-size: 0.8em;
+    font-size: 1.8rem;
     color: white;
 }
 
 #footer-right svg {
-    width: 2em;
-    margin: 0.5em;
+    width: 2.2rem;
+    margin: 0.5rem;
     margin-left: 0;
     filter: invert(1);
 }
@@ -621,20 +620,23 @@ form *::placeholder {
         text-align: left;
     }
     #footer-right h3 span{
-        font-size: 1em;
+        font-size: 1rem;
     }
     #footer-left img{
         width: 85vw;
     }
     #footer-right{
         width: 100%;
-        margin-top: 2em;
+        margin-top: 2rem;
     }
     #footer-center{
-        margin-top: 1em;
+        margin-top: 1rem;
         width: 100%;
     }
     #footer-right svg{
-        width: 1.7em;
+        width: 1.7rem;
+    }
+    #policy-content li{
+        margin: 1em 0;
     }
 }
