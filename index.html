@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+
+    <title>THE LING-LANG SENSEI</title>
+</head>
+
+<body>
+    <div id="nav-section">
+        <nav class="navbar navbar-expand-lg" id="nav">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#" id="logo"><img src="./assets/final-logo.png" alt=""></a>
+                <button id="nav-btn" class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav" id="nav-links">
+                        <a class="nav-link active" aria-current="page" href="#about">About</a>
+                        <a class="nav-link" href="#services">Services</a>
+                        <a class="nav-link" href="#policy-section">Policies</a>
+                        <a class="nav-link" href="#contact-section">Contact</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <div id="hero" class="container-fluid">
+        <h1>The Ling Lang Sensei</h1>
+        <p>Embrace Knowledge Today; Mirror It Tomorrow!</p>
+        <!-- <div id='buttons'>
+            <button onclick="">Contact Us</button>
+            <button id='ghost-btn'>Learn More &gt;</button>
+        </div> -->
+    </div>
+    <div id='about' class="container-fluid">
+        <div id='about-top' class="container-fluid">
+            <h5>ABOUT US</h5>
+            <p>The Ling-Lang Sensei is an online startup company that offers language courses, mainly in English and
+                Arabic, for all ages! </p>
+        </div>
+        <div id="about-bottom" class="container-fluid">
+            <div id="img-section">
+                <img src='./assets/about-1.jpg' alt="" />
+            </div>
+            <div id='text-section'>
+                <p>Here, at the Ling-Lang Sensei, we seek to break the barriers between language learners and their
+                    desire
+                    to learn a new language! That is why our number-one priority goal is to make the learning journey as
+                    fun
+                    and fruitful as possible! </p>
+                <p>We guarantee you an experience that is worth telling because we believe that if you embrace knowledge
+                    today, you will mirror it tomorrow!</p>
+            </div>
+        </div>
+    </div>
+    <div id='services' class="container-fluid">
+        <h2>Our Services</h2>
+        <div id='service-cards'>
+            <div class="card service-card" style="width: 18rem;">
+                <img src='./assets/student.png' class="card-img-top card-img" />
+                <div class="card-body">
+                    <h5 class="card-title">English For Conversational Purposes</h5>
+                </div>
+            </div>
+            <div class="card service-card" style="width: 18rem;">
+                <img src='./assets/arabic.png' class="card-img-top card-img" />
+                <div class="card-body">
+                    <h5 class="card-title">Arabic for non-Arabs</h5>
+                </div>
+            </div>
+            <div class="card service-card" style="width: 18rem;">
+                <img src='./assets/literature.png' class="card-img-top card-img" />
+                <div class="card-body">
+                    <h5 class="card-title">Learning English through literature</h5>
+                </div>
+            </div>
+            <div class="card service-card" style="width: 18rem;">
+                <img src='./assets/children.png' class="card-img-top card-img" />
+                <div class="card-body">
+                    <h5 class="card-title">English for young learners</h5>
+                </div>
+            </div>
+            <div class="card service-card" style="width: 18rem;">
+                <img src='./assets/children.png' class="card-img-top card-img" />
+                <div class="card-body">
+                    <h5 class="card-title">Business English</h5>
+                </div>
+            </div>
+            <div class="card service-card" style="width: 18rem;">
+                <img src='./assets/academic.png' class="card-img-top card-img" />
+                <div class="card-body">
+                    <h5 class="card-title">Academic English</h5>
+                </div>
+            </div>
+            <div class="card service-card" style="width: 18rem;">
+                <img src='./assets/interview.png' class="card-img-top card-img" />
+                <div class="card-body">
+                    <h5 class="card-title">English for Interviews</h5>
+                </div>
+            </div>
+            <div class="card service-card" style="width: 18rem;" class='service-card'>
+                <img src='./assets/ielts.png' class="card-img-top card-img" />
+                <div class="card-body">
+                    <h5 class="card-title">TOEFL/IELTS</h5>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id='policy-section' class="container-fluid">
+        <div id='left-section'>
+            <h3>Our Policies</h3>
+            <button onclick="showPolicy(0)">Attendance Policy</button>
+            <button onclick="showPolicy(1)">Refund Policy</button>
+            <button onclick="showPolicy(2)">Meterials Policy</button>
+            <button onclick="showPolicy(3)">Tasks & Assignments Policy</button>
+        </div>
+        <div id="right-section" class="container-fluid">
+            <h3 id="policy-name"></h3>
+            <div id="policy-content"></div>
+        </div>
+    </div>
+    <div id="contact-section" class="container-fluid">
+        <div id="contact-top">
+            <h3>Contact Us</h3>
+            <!-- <p>We'd love to hear from you!</p> -->
+        </div>
+        <div id="contact-bottom" class="container-fluid">
+            <div id="contact-form">
+                <p>You can send us an email!</p>
+                <form action="https://api.web3forms.com/submit" method="POST">
+
+                    <!-- Replace with your Access Key -->
+                    <input type="hidden" name="access_key" value="c96cbf9b-4905-4e81-a6c6-c5046e6a806a">
+
+                    <!-- Form Inputs. Each input must have a name="" attribute -->
+                    <input type="text" name="name" required placeholder="Your Name">
+                    <input type="email" name="email" required placeholder="Your Email Address">
+                    <textarea name="message" required placeholder="Write Your Message Here" id="message"></textarea>
+
+                    <!-- hCaptcha Spam Protection -->
+                    <div class="h-captcha" data-captcha="true" style="display: none;"></div>
+
+                    <button type="submit">Submit Form</button>
+
+                </form>
+            </div>
+            <div id="contact-right">
+                <div id="contact-info">
+                    <div>
+                        <p>Or you can call / message us on <br><span>+201065183261</span></p>
+                    </div>
+                </div>
+                <div id="contact-social">
+                    <p>You can also follow our social media!</p>
+                    <div id="contact-links">
+                        <a href="https://www.instagram.com/thelinglangsensei_edu/">
+                            <svg xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 448 512"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                                <path
+                                    d="M194.4 211.7a53.3 53.3 0 1 0 59.3 88.7 53.3 53.3 0 1 0 -59.3-88.7zm142.3-68.4c-5.2-5.2-11.5-9.3-18.4-12c-18.1-7.1-57.6-6.8-83.1-6.5c-4.1 0-7.9 .1-11.2 .1c-3.3 0-7.2 0-11.4-.1c-25.5-.3-64.8-.7-82.9 6.5c-6.9 2.7-13.1 6.8-18.4 12s-9.3 11.5-12 18.4c-7.1 18.1-6.7 57.7-6.5 83.2c0 4.1 .1 7.9 .1 11.1s0 7-.1 11.1c-.2 25.5-.6 65.1 6.5 83.2c2.7 6.9 6.8 13.1 12 18.4s11.5 9.3 18.4 12c18.1 7.1 57.6 6.8 83.1 6.5c4.1 0 7.9-.1 11.2-.1c3.3 0 7.2 0 11.4 .1c25.5 .3 64.8 .7 82.9-6.5c6.9-2.7 13.1-6.8 18.4-12s9.3-11.5 12-18.4c7.2-18 6.8-57.4 6.5-83c0-4.2-.1-8.1-.1-11.4s0-7.1 .1-11.4c.3-25.5 .7-64.9-6.5-83l0 0c-2.7-6.9-6.8-13.1-12-18.4zm-67.1 44.5A82 82 0 1 1 178.4 324.2a82 82 0 1 1 91.1-136.4zm29.2-1.3c-3.1-2.1-5.6-5.1-7.1-8.6s-1.8-7.3-1.1-11.1s2.6-7.1 5.2-9.8s6.1-4.5 9.8-5.2s7.6-.4 11.1 1.1s6.5 3.9 8.6 7s3.2 6.8 3.2 10.6c0 2.5-.5 5-1.4 7.3s-2.4 4.4-4.1 6.2s-3.9 3.2-6.2 4.2s-4.8 1.5-7.3 1.5l0 0c-3.8 0-7.5-1.1-10.6-3.2zM448 96c0-35.3-28.7-64-64-64H64C28.7 32 0 60.7 0 96V416c0 35.3 28.7 64 64 64H384c35.3 0 64-28.7 64-64V96zM357 389c-18.7 18.7-41.4 24.6-67 25.9c-26.4 1.5-105.6 1.5-132 0c-25.6-1.3-48.3-7.2-67-25.9s-24.6-41.4-25.8-67c-1.5-26.4-1.5-105.6 0-132c1.3-25.6 7.1-48.3 25.8-67s41.5-24.6 67-25.8c26.4-1.5 105.6-1.5 132 0c25.6 1.3 48.3 7.1 67 25.8s24.6 41.4 25.8 67c1.5 26.3 1.5 105.4 0 131.9c-1.3 25.6-7.1 48.3-25.8 67z" />
+                            </svg>
+                        </a>
+                        <a href="https://www.facebook.com/profile.php?id=61557485543309"><svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 448 512"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                                <path
+                                    d="M64 32C28.7 32 0 60.7 0 96V416c0 35.3 28.7 64 64 64h98.2V334.2H109.4V256h52.8V222.3c0-87.1 39.4-127.5 125-127.5c16.2 0 44.2 3.2 55.7 6.4V172c-6-.6-16.5-1-29.6-1c-42 0-58.2 15.9-58.2 57.2V256h83.6l-14.4 78.2H255V480H384c35.3 0 64-28.7 64-64V96c0-35.3-28.7-64-64-64H64z" />
+                            </svg></a>
+                        <a href="https://twitter.com/zlinglangsensei"><svg xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 448 512"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                                <path
+                                    d="M64 32C28.7 32 0 60.7 0 96V416c0 35.3 28.7 64 64 64H384c35.3 0 64-28.7 64-64V96c0-35.3-28.7-64-64-64H64zm297.1 84L257.3 234.6 379.4 396H283.8L209 298.1 123.3 396H75.8l111-126.9L69.7 116h98l67.7 89.5L313.6 116h47.5zM323.3 367.6L153.4 142.9H125.1L296.9 367.6h26.3z" />
+                            </svg></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="footer-section" class="container-fluid">
+        <div id="footer-left">
+        <img src="./assets/logo.png" alt="">
+    </div>
+        <div id="footer-center">
+            <a href="#about">About</a>
+            <a href="#services">Services</a>
+            <a href="#policy-section">Policies</a>
+            <a href="#contact-section">Contact Us</a>
+        </div>
+        <div id="footer-right">
+            <h3>Email Address: <br> <a href="mailto:thelinglangsensei@gmail.com">thelinglangsensei@gmail.com</a></h3>
+            <h3>Phone Number: <br> <span>+201065183261</span></h3>
+            <h3>Social Media: <span>
+                    <a href="https://www.instagram.com/thelinglangsensei_edu/">
+                        <svg xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 448 512"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                            <path
+                                d="M194.4 211.7a53.3 53.3 0 1 0 59.3 88.7 53.3 53.3 0 1 0 -59.3-88.7zm142.3-68.4c-5.2-5.2-11.5-9.3-18.4-12c-18.1-7.1-57.6-6.8-83.1-6.5c-4.1 0-7.9 .1-11.2 .1c-3.3 0-7.2 0-11.4-.1c-25.5-.3-64.8-.7-82.9 6.5c-6.9 2.7-13.1 6.8-18.4 12s-9.3 11.5-12 18.4c-7.1 18.1-6.7 57.7-6.5 83.2c0 4.1 .1 7.9 .1 11.1s0 7-.1 11.1c-.2 25.5-.6 65.1 6.5 83.2c2.7 6.9 6.8 13.1 12 18.4s11.5 9.3 18.4 12c18.1 7.1 57.6 6.8 83.1 6.5c4.1 0 7.9-.1 11.2-.1c3.3 0 7.2 0 11.4 .1c25.5 .3 64.8 .7 82.9-6.5c6.9-2.7 13.1-6.8 18.4-12s9.3-11.5 12-18.4c7.2-18 6.8-57.4 6.5-83c0-4.2-.1-8.1-.1-11.4s0-7.1 .1-11.4c.3-25.5 .7-64.9-6.5-83l0 0c-2.7-6.9-6.8-13.1-12-18.4zm-67.1 44.5A82 82 0 1 1 178.4 324.2a82 82 0 1 1 91.1-136.4zm29.2-1.3c-3.1-2.1-5.6-5.1-7.1-8.6s-1.8-7.3-1.1-11.1s2.6-7.1 5.2-9.8s6.1-4.5 9.8-5.2s7.6-.4 11.1 1.1s6.5 3.9 8.6 7s3.2 6.8 3.2 10.6c0 2.5-.5 5-1.4 7.3s-2.4 4.4-4.1 6.2s-3.9 3.2-6.2 4.2s-4.8 1.5-7.3 1.5l0 0c-3.8 0-7.5-1.1-10.6-3.2zM448 96c0-35.3-28.7-64-64-64H64C28.7 32 0 60.7 0 96V416c0 35.3 28.7 64 64 64H384c35.3 0 64-28.7 64-64V96zM357 389c-18.7 18.7-41.4 24.6-67 25.9c-26.4 1.5-105.6 1.5-132 0c-25.6-1.3-48.3-7.2-67-25.9s-24.6-41.4-25.8-67c-1.5-26.4-1.5-105.6 0-132c1.3-25.6 7.1-48.3 25.8-67s41.5-24.6 67-25.8c26.4-1.5 105.6-1.5 132 0c25.6 1.3 48.3 7.1 67 25.8s24.6 41.4 25.8 67c1.5 26.3 1.5 105.4 0 131.9c-1.3 25.6-7.1 48.3-25.8 67z" />
+                        </svg>
+                    </a>
+                    <a href="https://www.facebook.com/profile.php?id=61557485543309"><svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 448 512"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                            <path
+                                d="M64 32C28.7 32 0 60.7 0 96V416c0 35.3 28.7 64 64 64h98.2V334.2H109.4V256h52.8V222.3c0-87.1 39.4-127.5 125-127.5c16.2 0 44.2 3.2 55.7 6.4V172c-6-.6-16.5-1-29.6-1c-42 0-58.2 15.9-58.2 57.2V256h83.6l-14.4 78.2H255V480H384c35.3 0 64-28.7 64-64V96c0-35.3-28.7-64-64-64H64z" />
+                        </svg></a>
+                    <a href="https://twitter.com/zlinglangsensei"><svg xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 448 512"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                            <path
+                                d="M64 32C28.7 32 0 60.7 0 96V416c0 35.3 28.7 64 64 64H384c35.3 0 64-28.7 64-64V96c0-35.3-28.7-64-64-64H64zm297.1 84L257.3 234.6 379.4 396H283.8L209 298.1 123.3 396H75.8l111-126.9L69.7 116h98l67.7 89.5L313.6 116h47.5zM323.3 367.6L153.4 142.9H125.1L296.9 367.6h26.3z" />
+                        </svg></a>
+                </span></h3>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <script>
+        let policyName = document.getElementById('policy-name');
+        let policyContent = document.getElementById('policy-content');
+        let rightSection = document.getElementById('right-section');
+        const policies = [{
+            name: 'Attendance Policy', content:
+                [`Absence is not allowed but for 2 
+  lectures and the missed lectures can be 
+  made up later whenever it is convenient 
+  for them and their teacher.`,
+                    `للطالب عذران للغياب ويتم تعويض المحاضرتين في مواعيد أخرى تناسبه وتناسب معلمه`,
+                    `If students get absent for the 3
+  rd time, 
+  they are the ones responsible for the 
+  missed lecture(s). If they want to make 
+  it/them up, they need to pay the fees 
+  for the missed lecture(s).`,
+                    `المرة الثالثة يتم حسبها ضمن عدد محاضراته المُلزم بها من قبل المركز، وفي حال أراد تعويضها يتم حسابه عليها مادياً بشكل منفصل
+  `,
+                    `The level’s exit exam cannot be missed 
+  since it is the tool through which the 
+  students’ levels are measured, and it is 
+  the threshold to the next level.`,
+                    `غير مسموح بالتغيب عن الامتحان الذي يُعقد عند نهاية كل دورة؛ حيث من خلاله يتم تقييم المستوى الذي وصل إليه الطالب ومنه يبدأ الدورة التالية`,
+                ]
+        }, {
+            name: 'Refund Policy', content: [
+                `The placement test session is half the 
+  price of the usual session based on 
+  where the student is based in; the fees 
+  of which is non-refundable.`,
+                `قيمة جلسة تحديد المستوى هي نصف قيمة الجلسة الأساسية حسب الدولة التابع/المقيم بها الطالب، ولا يتم استردادها في حال التخلف عن دخول جلسة تحديد المستوى`,
+                `85% of the fees are paid back to the 
+  students in case they decide not to take 
+  any further steps in the level after 
+  attending 1 session, and 75% of the 
+  total fees are refunded after attending 2 
+  sessions. `,
+                `يسترد الطالب 85% من جملة أمواله في حالة لم يرد الإكمال بعد أول محاضرة، و75% من جملة مادفعه بعد أول محاضرتين`,
+                `Fees cannot be refunded if the student 
+  decided not to go on the journey with us 
+  after attending 4+ sessions, but they 
+  can always freeze/hold and to pick up 
+  where they left off.`,
+                `لا يسترد الطالب أية أموال له من المركز إن حضر 4 محاضرات فيها أكثر؛ ولكن بإمكانه "تجميد" المستوى والبدء في وقت آخر حيث توقف إن عارض او شغله شاغل`,
+            ]
+        },
+        {
+            name: 'Meterials Policy', content: [
+                `The Academy has all the copy rights of 
+  the materials used during the lectures. 
+  Students are not allowed to use or share 
+  any with anyone. `,
+                `المواد العلمية هي ملكية فكرية خاصة بالمركز ولا يحق لأحد نشرها او إعطائها لأحد`,
+                `Students can always ask their instructor 
+  to screenshot any piece of info provided 
+  during the lectures, bearing in mind 
+  that students have their own designed 
+  materials. `,
+                `بإمكان الطالب دوماً سؤال معلمه إن أراد أن يتلقط صورة لأي محتوى يتم تناوله بالمحاضرات، حيث أن لكل طالب موادًا خاصة بهم ليست تلك التي للمعلم`,
+                `Students can open up to their instructor 
+  if they want to pay more attention to 
+  one of the linguistic skills more than the 
+  other skills for the sake of reaching out 
+  a plan that serves the students’ needs. `,
+                `بإمكان الطالب إبلاغ المعلم إن أراد أن يركز على أحد المهارات اللغوية دون الأخرى حتى يضعا خطة علمية معاً تهدف إلى تقويم لغة الطالب والاستفادة القصوى من الدورة/المستوى`
+            ]
+        },
+        {
+            name: 'Tasks & Assignments Policy', content: [
+                `Tasks are not meant to make the 
+    educational process challenging, but to help 
+    students improve their language, broaden 
+    their horizons and to get fruitful results.`,
+                `ليس الغرض من التكاليف هو التعجيز ولكن مساعدة الطالب في فهم اللغة وتحسينها أكثر وتوسيع مداركه ومتابعته متابعة يؤتى من بعدها ثمارها`,
+                `The amount of tasks can be negotiated with 
+    the instructor – if they want to have more 
+    or less is always an option on the table.`,
+                `بإمكان الطالب مناقشة معلمه في كمية التكليفات إن أراد أن يستزيد أو يُنقص من مقدارها، ولكن ماهو ضروري هو القيام بالتكليفات`,
+                `The instructor is NOT responsible for 
+    marking or giving feedback on the delayed 
+    tasks – when the delay duration exceeds 2 
+    times`,
+                `عدم القيام بالتكليف لمدة 3 محاضرات لا يستلزم من المعلم تصويبها إن قام بها الطالب بصورة مؤجلة`,
+                `Students are always welcome to ask their 
+    instructor if they found it hard doing their 
+    task(s).`,
+                `إن استصعب على الطالب فهم التكليف عليه دوماً الرجوع للمعلم لطلب المساعدة`
+            ]
+        }]
+
+        function showPolicy(e) {
+            rightSection.scrollIntoView({behavior: 'smooth'});
+            rightSection.style.display = 'block';
+            policyName.innerHTML = policies[e].name;
+            let policy = document.createElement('ul');
+            policies[e].content.forEach((content) => {
+                let li = document.createElement('li');
+                li.innerHTML = content;
+                policy.appendChild(li);
+            })
+            policyContent.innerHTML = policy.innerHTML;
+        }
+    </script>
+</body>
+
+</html>
