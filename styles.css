@@ -10,7 +10,10 @@ html{
     font-family: 'Recoleta';
     src: url('./assets/Recoleta-RegularDremO.otf');
 }
-
+@font-face {
+    font-family: 'Bell MT';
+    src: url('./assets/Bell-MT.ttf');
+}
 body {
     background-color: #FCCC4E;
 }
@@ -215,9 +218,9 @@ h1:hover {
     width: 35vw;
 }
 #text-section p {
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: 'Bell MT';
     /* text-align: justify; */
-    font-size: 1.4rem;
+    font-size: 1.5rem;
     min-width: 35vw;     
 }
 #text-section p:nth-of-type(1) {
